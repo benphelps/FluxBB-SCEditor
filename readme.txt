@@ -2,14 +2,14 @@
 ##
 ##        Mod title:  SCEditor WYSIWYG
 ##
-##      Mod version:  1.0
+##      Mod version:  1.1
 ##  Works on FluxBB:  1.5.4
 ##     Release date:  2013-10-27
 ##           Author:  Ben Phelps (bphelpsen@gmail.com)
 ##
 ##      Description:  Add a WYSIWYG editor to your forum.
 ##
-##   Repository URL:  http://fluxbb.org/resources/mods/xxx
+##   Repository URL:  http://fluxbb.org/resources/mods/sceditor-wysiwyg/
 ##
 ##   Affected files:  include/parser.php
 ##                    edit.php
