@@ -15,6 +15,8 @@
 ##                    edit.php
 ##                    post.php
 ##                    header.php
+##                    admin_options.php
+##                    style/Air.css
 ##
 ##       Affects DB:  No
 ##
@@ -171,5 +173,104 @@ header.php
 <script type="text/javascript" src="sceditor/sceditor.js"></script>
 
 #
-#---------[ 22. SAVE/UPLOAD ]-------------------------------------------------
+#---------[ 22. OPEN ]---------------------------------------------------------
+#
+
+admin_options.php
+
+#
+#---------[ 23. FIND (line: 811) ]---------------------------------------------
+#
+
+										<textarea name="form[rules_message]" rows="10" cols="55"><?php echo pun_htmlspecialchars($pun_config['o_rules_message']) ?></textarea>
+
+#
+#---------[ 24. REPLACE WITH ]---------------------------------------------------
+#
+
+										<textarea class="scedit_html" name="form[rules_message]" rows="20" cols="100"><?php echo pun_htmlspecialchars($pun_config['o_rules_message']) ?></textarea>
+
+#
+#---------[ 25. FIND (line: 844) ]---------------------------------------------
+#
+
+										<textarea name="form[announcement_message]" rows="5" cols="55"><?php echo pun_htmlspecialchars($pun_config['o_announcement_message']) ?></textarea>
+
+#
+#---------[ 26. REPLACE WITH ]---------------------------------------------------
+#
+
+										<textarea class="scedit_html" name="form[announcement_message]" rows="20" cols="100"><?php echo pun_htmlspecialchars($pun_config['o_announcement_message']) ?></textarea>
+
+#
+#---------[ 27. FIND (line: 868) ]---------------------------------------------
+#
+
+										<textarea name="form[maintenance_message]" rows="5" cols="55"><?php echo pun_htmlspecialchars($pun_config['o_maintenance_message']) ?></textarea>
+
+#
+#---------[ 28. REPLACE WITH ]---------------------------------------------------
+#
+
+										<textarea class="scedit_html" name="form[maintenance_message]" rows="20" cols="100"><?php echo pun_htmlspecialchars($pun_config['o_maintenance_message']) ?></textarea>
+
+#
+#---------[ 29. OPEN ]---------------------------------------------------------
+#
+
+style/Air.css
+
+#
+#---------[ 30. FIND (line: 8) ]---------------------------------------------
+#
+
+html, body, .pun table, .pun div, .pun form, .pun p, .pun h1, .pun h2, .pun h3, .pun h4, .pun h5, .pun pre, .pun blockquote,
+.pun ul, .pun ol, .pun li, .pun dl, .pun dt, .pun dd, .pun th, .pun td, .pun fieldset, .pun legend .pun img,
+.pun abbr, .pun cite {
+	border: 0;
+	font-style: normal;
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+}
+
+#
+#---------[ 31. REPLACE WITH ]---------------------------------------------------
+#
+
+html, body, .pun table, .pun div, .pun form, .pun p, .pun h1, .pun h2, .pun h3, .pun h4, .pun h5, .pun pre, .pun blockquote,
+.pun ul, .pun ol, .pun li, .pun dl, .pun dt, .pun dd, .pun th, .pun td, .pun fieldset, .pun legend .pun img,
+.pun abbr, .pun cite {
+	font-style: normal;
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+}
+
+#
+#---------[ 32. FIND (line: 1662) ]---------------------------------------------
+#
+
+.pun .inew .icon {
+	border-color: #91b3d9 #87a8d1 #6c85bb #7292c3;
+}
+
+#
+#---------[ 33. AFTER, ADD ]---------------------------------------------------
+#
+
+/* SCEditor WYSIWYG
+----------------------------------------------------------------*/
+
+.pun fieldset { /* This fixed the border around the forms (why isn't this default?) */
+	border: 0;
+}
+
+.postmsg hr {
+	border: 0;
+	height: 2px;
+}
+
+#
+#---------[ 34. SAVE/UPLOAD ]-------------------------------------------------
 #

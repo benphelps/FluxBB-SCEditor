@@ -48,7 +48,7 @@ jQuery( document ).ready(function() {
         },
     });
 
-    jQuery(".scedit_bbcode").sceditor({
+    jQuery(".scedit_html").sceditor({
         plugins: "xhtml",
         style: "minified/jquery.sceditor.default.min.css",
         emoticonsEnabled: true,
