@@ -9,7 +9,7 @@
 ##
 ##      Description:  Add a WYSIWYG editor to your forum.
 ##
-##   Repository URL:  http://fluxbb.org/resources/mods/xxx
+##   Repository URL:  http://fluxbb.org/resources/mods/sceditor-wysiwyg/
 ##
 ##   Affected files:  include/parser.php
 ##                    edit.php
